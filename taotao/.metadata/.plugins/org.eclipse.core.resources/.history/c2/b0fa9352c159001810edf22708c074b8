@@ -1,0 +1,11 @@
+package com.taotao.controller;
+
+import org.springframework.stereotype.Controller;
+
+import com.taotao.service.ItemService;
+
+@Controller
+public class ItemController {
+	
+	private ItemService itemService;
+}

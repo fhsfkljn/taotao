@@ -1,0 +1,22 @@
+package com.taotao.service;
+
+import com.taotao.common.pojo.EUDataGridResult;
+import com.taotao.pojo.TbItem;
+
+public interface ItemService {
+	/**
+	 * 通过id查找商品
+	 * @param itemId
+	 * @return
+	 */
+	TbItem getItemById(long itemId);
+	
+	/**
+	 * 商品列表分页
+	 * @param page
+	 * @param rows
+	 * @return
+	 */
+	EUDataGridResult getItemList(int page, int rows);
+	
+}
